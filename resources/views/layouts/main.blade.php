@@ -37,8 +37,9 @@
 <body>
 
     @include('layouts.navbar')
-
+<div class="container mt-5">
     @yield('container')
+</div>
 
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i

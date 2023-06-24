@@ -17,7 +17,7 @@ class QuestionController extends Controller
     public function store(Request $request)
     {
         $messages = $request->session()->get('messages', [
-            ['role' => 'system', 'content' => 'You are laravel chatgpt clone']
+            ['role' => 'system', 'content' => 'ChatGpt']
         ]);
         $messages[] = ['role' => 'user', 'content' => $request->input('message')];
         $response = OpenAI::chat()->create([
