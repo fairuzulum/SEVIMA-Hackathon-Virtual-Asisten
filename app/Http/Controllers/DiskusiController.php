@@ -17,10 +17,12 @@ class DiskusiController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+            'judul' => 'required',
             'pertanyaan' => 'required',
         ]);
 
         Discution::create([
+            'judul' => $request->judul,
             'pertanyaan' => $request->pertanyaan,
             'tanggal' => date('Y-m-d'),
             'waktu' => date('H:i:s'),
@@ -29,16 +31,7 @@ class DiskusiController extends Controller
         return redirect()->route('diskusi.index')->with('success', 'Pertanyaan berhasil ditambahkan.');
     }
 
-    public function storeBalasan(Request $request, $id)
-    {
-        $request->validate([
-            'balasan' => 'required',
-        ]);
+    
+    
 
-        $diskusi = Discution::findOrFail($id);
-        $diskusi->balasan = $request->balasan;
-        $diskusi->save();
-
-        return redirect()->route('diskusi.index')->with('success', 'Balasan berhasil ditambahkan.');
-    }
 }

@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('discutions', function (Blueprint $table) {
             $table->id();
+            $table->string('judul');
             $table->string('pertanyaan');
-            $table->text('balasan')->nullable();
             $table->date('tanggal');
             $table->time('waktu');
             $table->timestamps();

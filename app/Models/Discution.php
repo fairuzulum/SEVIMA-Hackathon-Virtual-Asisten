@@ -10,8 +10,8 @@ class Discution extends Model
     use HasFactory;
 
     protected $fillable = [
+        'judul',
         'pertanyaan',
-        'balasan',
         'tanggal',
         'waktu',
     ];
