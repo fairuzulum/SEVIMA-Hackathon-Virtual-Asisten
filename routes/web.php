@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/question', [QuestionController::class, 'index']);
+Route::post('/question', [QuestionController::class, 'store']);
