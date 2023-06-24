@@ -37,9 +37,9 @@
 <body>
 
     @include('layouts.navbar')
-<div class="container mt-5">
-    @yield('container')
-</div>
+    <div class="container mt-5">
+        @yield('container')
+    </div>
 
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
@@ -54,6 +54,80 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <style>
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            overflow-y: scroll;
+            padding: 10px;
+            margin-top: 100px;
+        }
+
+        .message {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-bottom: 10px;
+        }
+
+        .message.assistant {
+            align-items: flex-start;
+        }
+
+        .message .message-content {
+            background-color: #dcf8c6;
+            border-radius: 10px;
+            padding: 10px;
+            align-self: flex-end;
+        }
+
+        .message.assistant .message-content {
+            background-color: #f2f2f2;
+            align-self: flex-start;
+        }
+
+        .message h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .message p {
+            margin: 0;
+        }
+
+        .input-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .input-container input {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 8px;
+        }
+
+        .input-container a {
+            background-color: #333;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .input-container a:hover {
+            background-color: #555;
+        }
+
+        .btn {
+            background-color: #0bc041;
+        }
+    </style>
 
 </body>
 
