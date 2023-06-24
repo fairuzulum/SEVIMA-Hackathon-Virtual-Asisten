@@ -19,7 +19,8 @@ https://platform.openai.com/account/api-keys
 ## STEP 2 
 
 Tambahkan Variable di file .inv lalu masukan key api dari chatgpt
-OPENAI_API_KEY=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
+
+-> OPENAI_API_KEY=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
 
 ## STEP 3
 
