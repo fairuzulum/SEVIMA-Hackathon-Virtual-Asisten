@@ -16,13 +16,21 @@
             @foreach($pertanyaan as $item)
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="heading{{ $item->id }}">
+                        
+                        
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $item->id }}" aria-expanded="false" aria-controls="collapse{{ $item->id }}">
-                            <h5>Judul Diskusi : {{ $item->judul }}</h5>
+                            <h5>{{ $item->judul }}</h5>
+                         
                         </button>
+                        
                     </h2>
                     <div id="collapse{{ $item->id }}" class="accordion-collapse collapse" aria-labelledby="heading{{ $item->id }}" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <p class="card-title">{{ $item->pertanyaan }}</p>
+                            <br>
+                            <p> 
+                                (<small>{{ $item->created_at->diffForHumans() }}</small>)
+                            </p>
                         </div>
                     </div>
                 </div>

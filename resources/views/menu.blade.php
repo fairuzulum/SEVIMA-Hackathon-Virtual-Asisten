@@ -21,7 +21,7 @@
                             <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
                             <div class="course-content">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <h4><a href="/question">ChatBot</a></h4>
+                                    <h4><a href="/question" style="color: white;">ChatBot</a></h4>
                                 </div>
                                 <hr>
                                 <h3>Deskripsi</h3>
@@ -30,27 +30,14 @@
                         </div>
                     </div> <!-- End Course Item-->
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                        <div class="course-item">
-                            <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
-                            <div class="course-content">
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <h4>Translate</h4>
-                                </div>
-                                <hr>
-                                <h3><a href="course-details.html">Deskripsi</a></h3>
-                                <p>Fitur Translate kami memudahkan Anda dalam menerjemahkan teks atau kata-kata dalam berbagai bahasa.</p>
-                                
-                            </div>
-                        </div>
-                    </div> <!-- End Course Item-->
+                    
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                         <div class="course-item">
                             <img src="assets/img/course-3.jpg" class="img-fluid" alt="...">
                             <div class="course-content">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <h4><a href="/diskusi">Forum Diskusi</a></h4>
+                                    <h4><a href="/diskusi" style="color: white;">Forum Diskusi</a></h4>
                                 </div>
                                 <hr>
                                 <h3><a href="course-details.html">Deskripsi</a></h3>
