@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 Route::get('/question', [QuestionController::class, 'index']);
 Route::post('/question', [QuestionController::class, 'store']);
+Route::get('/reset', [QuestionController::class, 'destroy']);

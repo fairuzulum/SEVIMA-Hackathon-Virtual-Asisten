@@ -10,7 +10,9 @@ class QuestionController extends Controller
     public function index()
     {
         $messages = collect(session('messages', []))->reject(fn ($messages) => $messages['role'] == 'system');
-        return view('question');
+        return view('question', [
+            'messages' => $messages
+        ]);
     }
     public function store(Request $request)
     {
@@ -24,6 +26,12 @@ class QuestionController extends Controller
         ]);
         $messages[] = ['role' => 'assistant', 'content' => $response->choices[0]->message->content];
         $request->session()->put('messages', $messages);
-        return redirect('/');
+        return redirect('/question');
+    }
+    public function destroy(Request $request)
+    {
+        $request->session()->forget('messages');
+
+        return redirect('/question');
     }
 }
