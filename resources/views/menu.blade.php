@@ -21,10 +21,10 @@
                             <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
                             <div class="course-content">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <h4>ChatBot</h4>
+                                    <h4><a href="/question">ChatBot</a></h4>
                                 </div>
                                 <hr>
-                                <h3><a href="course-details.html">Deskripsi</a></h3>
+                                <h3>Deskripsi</h3>
                                 <p>Fitur ChatBot kami memungkinkan Anda untuk berinteraksi dengan asisten virtual berbasis AI yang siap membantu menjawab pertanyaan Anda seputar pembelajaran.</p>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                             <img src="assets/img/course-3.jpg" class="img-fluid" alt="...">
                             <div class="course-content">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <h4>Forum Diskusi</h4>
+                                    <h4><a href="/diskusi">Forum Diskusi</a></h4>
                                 </div>
                                 <hr>
                                 <h3><a href="course-details.html">Deskripsi</a></h3>

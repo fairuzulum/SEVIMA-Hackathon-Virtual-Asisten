@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DiskusiController;
 use App\Http\Controllers\QuestionController;
 
 /*
@@ -25,3 +26,9 @@ Route::get('/menu', function () {
 Route::get('/question', [QuestionController::class, 'index']);
 Route::post('/question', [QuestionController::class, 'store']);
 Route::get('/reset', [QuestionController::class, 'destroy']);
+
+Route::get('/diskusi', [DiskusiController::class, 'index'])->name('diskusi.index');
+Route::post('/diskusi', [DiskusiController::class, 'store'])->name('diskusi.store');
+Route::post('/diskusi/{id}/balasan', [DiskusiController::class, 'storeBalasan'])->name('diskusi.storeBalasan');
+
+
